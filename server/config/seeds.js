@@ -48,7 +48,7 @@ db.once('open', async () => {
       name: 'Chimchar',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+        'Fire Type.',
       image: 'fire4.webp',
       price: 3.99,
       quantity: 50
@@ -57,7 +57,7 @@ db.once('open', async () => {
       name: 'Bulbasor',
       category: categories[1]._id,
       description:
-        'Grass type',
+        'Grass Type',
       image: 'Grass1.png',
       price: 14.99,
       quantity: 100
@@ -92,7 +92,7 @@ db.once('open', async () => {
     {
       name: 'Squirtle',
       category: categories[4]._id,
-      description: 'Water type.',
+      description: 'Water Type.',
       image: 'water1.png',
       price: 1.99,
       quantity: 1000
@@ -101,7 +101,7 @@ db.once('open', async () => {
       name: 'Mudkip',
       category: categories[4]._id,
       description:
-        'Water type.',
+        'Water Type.',
       image: 'water2',
       price: 2.99,
       quantity: 1000
