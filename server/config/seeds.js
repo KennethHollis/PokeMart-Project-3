@@ -5,11 +5,11 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Fire' },
+    { name: 'Water' },
+    { name: 'Grass' },
+    { name: 'Flying' },
+    { name: 'Fighting' }
   ]);
 
   console.log('categories seeded');
@@ -21,7 +21,7 @@ db.once('open', async () => {
       name: 'Chimchar',
       description:
         'Fire type.',
-      image: 'fire1.png',
+      image: 'Fire1.png',
       category: categories[0]._id,
       price: 2.99,
       quantity: 500
@@ -30,7 +30,7 @@ db.once('open', async () => {
       name: 'Torchic',
       description:
         'Fire Type.',
-      image: 'fire2.webp',
+      image: 'Fire2.webp',
       category: categories[0]._id,
       price: 1.99,
       quantity: 500
@@ -40,7 +40,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Fire Type.',
-      image: 'fire3.webp',
+      image: 'Fire3.webp',
       price: 7.99,
       quantity: 20
     },
@@ -49,7 +49,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Fire Type.',
-      image: 'fire4.webp',
+      image: 'Fire4.webp',
       price: 3.99,
       quantity: 50
     },
@@ -76,7 +76,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Grass Type.',
-      image: 'Grass3',
+      image: 'Grass3.png',
       price: 199.99,
       quantity: 30
     },
@@ -85,7 +85,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'Grass Type.',
-      image: 'Grass4',
+      image: 'Grass4.png',
       price: 9.99,
       quantity: 100
     },
@@ -102,7 +102,7 @@ db.once('open', async () => {
       category: categories[4]._id,
       description:
         'Water Type.',
-      image: 'water2',
+      image: 'water2.png',
       price: 2.99,
       quantity: 1000
     },
