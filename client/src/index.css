@@ -1,5 +1,5 @@
 :root {
-  --primary: #232F3E;
+  --primary: #B12704;
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
@@ -96,7 +96,7 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 button:hover {
@@ -162,6 +162,10 @@ input:focus {
 .mx-2 {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
+}
+
+::marker {
+  color: var(--primary);
 }
 
 .my-1 {

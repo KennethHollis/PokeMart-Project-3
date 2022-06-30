@@ -5,11 +5,11 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Fire' },
-    { name: 'Water' },
-    { name: 'Grass' },
-    { name: 'Flying' },
-    { name: 'Fighting' }
+    { name: '$' },
+    { name: '$$' },
+    { name: '$$$' },
+    { name: '$$$$' },
+    { name: '$$$$$' }
   ]);
 
   console.log('categories seeded');
@@ -18,13 +18,13 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Chimchar',
+      name: 'Charmander',
       description:
         'Fire type.',
       image: 'Fire1.png',
       category: categories[0]._id,
       price: 2.99,
-      quantity: 500
+      quantity: 5283
     },
     {
       name: 'Torchic',
@@ -33,7 +33,7 @@ db.once('open', async () => {
       image: 'Fire2.webp',
       category: categories[0]._id,
       price: 1.99,
-      quantity: 500
+      quantity: 6085
     },
     {
       name: 'Cyndaquil',
@@ -41,8 +41,8 @@ db.once('open', async () => {
       description:
         'Fire Type.',
       image: 'Fire3.webp',
-      price: 7.99,
-      quantity: 20
+      price: 12.99,
+      quantity: 4567
     },
     {
       name: 'Chimchar',
@@ -50,26 +50,26 @@ db.once('open', async () => {
       description:
         'Fire Type.',
       image: 'Fire4.webp',
-      price: 3.99,
-      quantity: 50
+      price: 13.99,
+      quantity: 4208
     },
     {
-      name: 'Bulbasor',
+      name: 'Bulbasaur',
       category: categories[1]._id,
       description:
         'Grass Type',
       image: 'Grass1.png',
-      price: 14.99,
-      quantity: 100
+      price: 15.99,
+      quantity: 4100
     },
     {
-      name: 'Treko',
+      name: 'Treecko',
       category: categories[2]._id,
       description:
         'Grass Type.',
       image: 'Grass2.webp',
-      price: 399.99,
-      quantity: 30
+      price: 59.99,
+      quantity: 3876
     },
     {
       name: 'Turtwig',
@@ -77,8 +77,8 @@ db.once('open', async () => {
       description:
         'Grass Type.',
       image: 'Grass3.png',
-      price: 199.99,
-      quantity: 30
+      price: 67.99,
+      quantity: 3657
     },
     {
       name: 'Chikorita',
@@ -86,16 +86,16 @@ db.once('open', async () => {
       description:
         'Grass Type.',
       image: 'Grass4.png',
-      price: 9.99,
-      quantity: 100
+      price: 199.99,
+      quantity: 1875
     },
     {
       name: 'Squirtle',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description: 'Water Type.',
       image: 'water1.png',
-      price: 1.99,
-      quantity: 1000
+      price: 164.99,
+      quantity: 1289
     },
     {
       name: 'Mudkip',
@@ -103,8 +103,8 @@ db.once('open', async () => {
       description:
         'Water Type.',
       image: 'water2.png',
-      price: 2.99,
-      quantity: 1000
+      price: 767.99,
+      quantity: 387
     },
     {
       name: 'Piplup',
@@ -112,8 +112,8 @@ db.once('open', async () => {
       description:
         'Water Type.',
       image: 'water3.webp',
-      price: 7.99,
-      quantity: 100
+      price: 834.99,
+      quantity: 235
     },
     {
       name: 'Totodile',
@@ -121,8 +121,8 @@ db.once('open', async () => {
       description:
         'Water Type.',
       image: 'water4.png',
-      price: 9.99,
-      quantity: 600
+      price: 999.99,
+      quantity: 69
     }
   ]);
 
