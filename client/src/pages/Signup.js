@@ -39,7 +39,7 @@ function Signup(props) {
         <div className="flex-row space-between my-2">
           <label htmlFor="firstName">First Name:</label>
           <input
-            placeholder="First"
+            placeholder="John"
             name="firstName"
             type="firstName"
             id="firstName"
@@ -49,7 +49,7 @@ function Signup(props) {
         <div className="flex-row space-between my-2">
           <label htmlFor="lastName">Last Name:</label>
           <input
-            placeholder="Last"
+            placeholder="Doe"
             name="lastName"
             type="lastName"
             id="lastName"
@@ -59,7 +59,7 @@ function Signup(props) {
         <div className="flex-row space-between my-2">
           <label htmlFor="email">Email:</label>
           <input
-            placeholder="youremail@test.com"
+            placeholder="johndoe@aol.com"
             name="email"
             type="email"
             id="email"
